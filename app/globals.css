@@ -27,7 +27,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: red 1px solid;
+  /* border: red 1px solid; */
 }
 
 html,
@@ -53,10 +53,6 @@ a {
 }
 
 .root-container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.button-test {
-  background-color: rgb(var(--landing-card-one-rgb));
+  /* max-width: var(--max-width);
+  margin: 0 auto; */
 }
