@@ -10,7 +10,7 @@ export default function Home() {
         {CardData.map((card: CardDataType) => (
           <>
             <div className={styles.spacer}></div>
-            <LandingCard card={card} />
+            <LandingCard key={card.id} card={card} />
             <div className={styles.spacer}></div>
           </>
         ))}

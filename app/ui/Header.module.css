@@ -2,6 +2,7 @@
   width: 100%;
   height: 90px;
   border-bottom: rgb(200, 200, 200) 2px solid;
+  display: flex;
 }
 
 .button_signin {
@@ -28,6 +29,7 @@
 }
 
 .navbar {
+  width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
@@ -40,10 +42,14 @@
 }
 
 .hero_image {
-  width: 55px;
+  padding-left: 1rem;
   height: auto;
   display: flex;
   align-items: center;
+  text-align: right;
+  position: inherit;
+  top: 15px;
+  left: -75px;
 }
 
 .link_container {
@@ -64,4 +70,42 @@
 
 .spacer {
   height: 10px;
+}
+
+.links {
+  display: flex;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .links,
+  .button_joinnow,
+  .button_signin {
+    display: none;
+  }
+
+  .menu {
+    width: 50px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) {
+  .menu {
+    z-index: -10;
+    display: none;
+    position: absolute;
+    width: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger_menu {
+    display: none;
+
+    padding-right: 1rem;
+    width: 100px;
+  }
 }
