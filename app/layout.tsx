@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Raleway } from "next/font/google";
 import Footer from "./ui/Footer";
 import Header from "./ui/Header";
 import "./globals.css";
+
+const raleway = Raleway({ subsets: ["latin"], weight: ["100"] });
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${raleway.className} antialiased`}>
         <div className="root-container">
           <Header />
           {children}
