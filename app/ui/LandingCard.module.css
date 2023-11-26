@@ -6,6 +6,9 @@
 .card_text_body {
   width: 80%;
   margin: 0 auto;
+  font-family: raleway;
+  font-weight: 400;
+  font-size: 1.25rem;
 }
 
 .landing_card_one {
@@ -81,7 +84,7 @@
 }
 
 .spacer_large {
-  height: 70px;
+  height: 50px;
 }
 
 .card_text_body {

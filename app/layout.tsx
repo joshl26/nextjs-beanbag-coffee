@@ -4,7 +4,7 @@ import Footer from "./ui/Footer";
 import Header from "./ui/Header";
 import "./globals.css";
 
-const raleway = Raleway({ subsets: ["latin"], weight: ["100"] });
+const raleway = Raleway({ subsets: ["latin"], weight: ["100", "400"] });
 
 const inter = Inter({ subsets: ["latin"] });
 

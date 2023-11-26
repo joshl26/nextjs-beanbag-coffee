@@ -19,9 +19,9 @@ export const CardData = [
   },
   {
     id: 3,
-    title: "Cold Brewed Choices",
+    title: "Grind your Own?",
     textBody:
-      "Cool down with a Cold Brewed coffee or tea drink. That's right, we also make cold brewed tea. Try one today!",
+      "All your favourite brews are also available in whole bean take home bags. Make a fresh ground brew each day at home!",
     className: "landing_card_three",
     buttonText: "Order Now",
     imgUrl: "/public/coldbrew.jpg",

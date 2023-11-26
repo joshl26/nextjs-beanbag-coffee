@@ -42,3 +42,11 @@
 .spacer {
   height: 50px;
 }
+
+.landing_info {
+  color: black;
+  font-family: raleway;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.25rem;
+}
