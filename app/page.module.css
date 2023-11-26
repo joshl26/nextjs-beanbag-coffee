@@ -3,8 +3,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 1rem;
   min-height: 100vh;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 /* Enable hover only on non-touch devices */
@@ -31,4 +33,12 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
+}
+
+.section_landing_card {
+  width: 100%;
+}
+
+.spacer {
+  height: 50px;
 }
