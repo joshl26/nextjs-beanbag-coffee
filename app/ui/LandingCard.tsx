@@ -49,8 +49,8 @@ const LandingCard = ({ card }: CardType) => {
           </div>
         </div>
         <div className={styles.right_column}>
-          <div className={styles.image_wrapper}>
-            <Image height={400} width={600} src={imageTernary} alt="" />
+          <div>
+            <Image className={styles.image_wrapper} src={imageTernary} alt="" />
           </div>
         </div>
       </div>

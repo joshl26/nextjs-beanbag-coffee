@@ -43,6 +43,7 @@ const Footer = () => {
           <div className={styles.spacer}></div>
           <p>2023 Beanbag Coffee Co. All rights reserved.</p>
         </div>
+        <div className={styles.spacer}></div>
       </div>
     </div>
   );
