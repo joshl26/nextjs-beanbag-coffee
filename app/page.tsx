@@ -2,6 +2,8 @@ import styles from "./page.module.css";
 import LandingCard from "./ui/LandingCard";
 import { CardDataType } from "./types/types";
 import { CardData } from "./data/cardData";
+import Image from "next/image";
+import Coffee from "/public/coffee.jpg";
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
             <div className={styles.spacer}></div>
           </>
         ))}
+
         <p className={styles.landing_info}>
           *Valid 11/17 - 11/30, enjoy 25% off your next Beanbag order of $20 or
           more, excluding taxes and fees, on DoorDash. Fees subject to change.

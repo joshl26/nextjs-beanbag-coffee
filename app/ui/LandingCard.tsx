@@ -7,6 +7,7 @@ import styles from "./LandingCard.module.css";
 import Expresso from "/public/expresso.jpg";
 import Coldbrew from "/public/coldbrew.jpg";
 import BagBean from "/public/bagbean.jpg";
+import Coffee from "/public/coffee.jpg";
 
 const LandingCard = ({ card }: CardType) => {
   const imageTernary =
@@ -19,16 +20,17 @@ const LandingCard = ({ card }: CardType) => {
       : "";
 
   return (
-    <div className={styles.card_container}>
-      <div
-        className={clsx({
-          [styles.landing_card_one]: card.className === "landing_card_one",
-          [styles.landing_card_two]: card.className === "landing_card_two",
-          [styles.landing_card_three]: card.className === "landing_card_three",
-        })}
-      >
-        <div className={styles.card_row}>
-          <div className={styles.card_col}>
+    <>
+      <div className={styles.flex_container}>
+        <div className={styles.left_column}>
+          <div
+            className={clsx({
+              [styles.landing_card_one]: card.className === "landing_card_one",
+              [styles.landing_card_two]: card.className === "landing_card_two",
+              [styles.landing_card_three]:
+                card.className === "landing_card_three",
+            })}
+          >
             <div className={styles.spacer_large}></div>
             <h2 className={styles.card_title}>{card.title}</h2>
             <div className={styles.spacer}></div>
@@ -45,17 +47,47 @@ const LandingCard = ({ card }: CardType) => {
               })}
             />
           </div>
-          <div className={styles.card_col}>
-            <Image
-              className={styles.card_image}
-              alt=""
-              height={500}
-              src={imageTernary}
-            />
+        </div>
+        <div className={styles.right_column}>
+          <div className={styles.image_wrapper}>
+            <Image height={400} width={600} src={imageTernary} alt="" />
           </div>
         </div>
       </div>
-    </div>
+      {/* <div className={styles.flex_container}>
+        <div
+          className={clsx({
+            [styles.landing_card_one]: card.className === "landing_card_one",
+            [styles.landing_card_two]: card.className === "landing_card_two",
+            [styles.landing_card_three]:
+              card.className === "landing_card_three",
+          })}
+        >
+          <div className={styles.left_column}>
+            <div className={styles.spacer_large}></div>
+            <h2 className={styles.card_title}>{card.title}</h2>
+            <div className={styles.spacer}></div>
+            <h4 className={styles.card_text_body}>{card.textBody}</h4>
+            <div className={styles.spacer}></div>
+            <RoundButton
+              href=""
+              buttonText={card.buttonText}
+              className={clsx({
+                [styles.button_card_one]: card.className === "landing_card_one",
+                [styles.button_card_two]: card.className === "landing_card_two",
+                [styles.button_card_three]:
+                  card.className === "landing_card_three",
+              })}
+            />
+          </div>
+          <div className={styles.right_column}>
+            <div className={styles.image_wrapper}>
+              <Image alt="" src={imageTernary} />
+            </div>
+          </div>
+        </div>
+      </div> */}
+    </>
   );
 };
 
