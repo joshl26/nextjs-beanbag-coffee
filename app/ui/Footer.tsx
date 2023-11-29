@@ -11,7 +11,6 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.footer_container}>
         <div>
-          {" "}
           <div className={styles.spacer}></div>
           <div className={styles.social_icons}>
             <Image alt="" src={Instagram} />
