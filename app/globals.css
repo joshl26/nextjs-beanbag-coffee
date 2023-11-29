@@ -55,3 +55,13 @@ a {
   /* max-width: var(--max-width);
   margin: 0 auto; */
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
