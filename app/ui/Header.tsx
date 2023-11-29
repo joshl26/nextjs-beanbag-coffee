@@ -1,20 +1,24 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import styles from "./Header.module.css";
 import RoundButton from "./RoundButton";
-import Beanbag from "/public/Beanbag.svg";
-import Hamburger from "/public/hamburger.svg";
+import { CldImage } from "next-cloudinary";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.spacer}></div>
-
+      <div className={styles.spacer} />
       <div className={styles.navbar}>
         <div className={styles.link_container}>
           <div className={styles.hero_image}>
-            <Image alt="" src={Beanbag} />
+            <CldImage
+              alt="BeanbagCoffee/Beanbag_o1njjx"
+              width="50"
+              height="50"
+              src="BeanbagCoffee/Beanbag_o1njjx"
+            />
           </div>
           <div className={styles.links}>
             <Link href="/menu">
@@ -42,7 +46,13 @@ const Header = () => {
         </div>
         <div className={styles.menu}>
           <Link href="">
-            <Image className={styles.hamburger_menu} src={Hamburger} alt="" />
+            <CldImage
+              className={styles.hamburger_menu}
+              alt="BeanbagCoffee/hamburger_ztvs3l"
+              width="50"
+              height="50"
+              src="BeanbagCoffee/hamburger_ztvs3l"
+            />
           </Link>
         </div>
       </div>
