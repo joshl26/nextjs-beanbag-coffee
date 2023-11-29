@@ -3,34 +3,46 @@ import React from "react";
 import RoundButton from "./RoundButton";
 import styles from "./SideMenu.module.css";
 
-const SideMenu = () => {
+type SideMenuProps = {
+  setMenuEnabled: (argument: boolean) => void;
+};
+
+const SideMenu = ({ setMenuEnabled }: SideMenuProps) => {
   return (
     <div className={styles.side_menu_container}>
       <div className={styles.side_menu_inner_container}>
         <div>
           <div className={styles.link_container}>
             <h2 className={styles.link}>
-              <Link href="/menu">Menu</Link>
+              <Link onClick={() => setMenuEnabled(false)} href="/menu">
+                Menu
+              </Link>
             </h2>
             <h2 className={styles.link}>
-              <Link href="/rewards">Rewards</Link>
+              <Link onClick={() => setMenuEnabled(false)} href="/rewards">
+                Rewards
+              </Link>
             </h2>
             <h2 className={styles.link}>
-              <Link href="/gift-cards">Gift Cards</Link>
+              <Link onClick={() => setMenuEnabled(false)} href="/gift-cards">
+                Gift Cards
+              </Link>
             </h2>
           </div>
           <div className={styles.divider}></div>
           <div className={styles.spacer}></div>
-          <RoundButton
-            href="/signin"
-            className={styles.button_signin}
-            buttonText="Sign In"
-          />
-          <RoundButton
-            href="/join"
-            className={styles.button_joinnow}
-            buttonText="Join Now"
-          />
+          <div onClick={() => setMenuEnabled(false)}>
+            <RoundButton
+              href="/signin"
+              className={styles.button_signin}
+              buttonText="Sign In"
+            />
+            <RoundButton
+              href="/join"
+              className={styles.button_joinnow}
+              buttonText="Join Now"
+            />
+          </div>
         </div>
       </div>
     </div>

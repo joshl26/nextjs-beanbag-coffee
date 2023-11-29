@@ -17,17 +17,21 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.side_menu}> {menuEnabled ? <SideMenu /> : ""}</div>
+      <div className={styles.side_menu}>
+        {menuEnabled ? <SideMenu setMenuEnabled={setMenuEnabled} /> : ""}
+      </div>
       <div className={styles.spacer} />
       <div className={styles.navbar}>
         <div className={styles.link_container}>
           <div className={styles.hero_image}>
-            <CldImage
-              alt="BeanbagCoffee/Beanbag_o1njjx"
-              width="50"
-              height="50"
-              src="BeanbagCoffee/Beanbag_o1njjx"
-            />
+            <Link href="/">
+              <CldImage
+                alt="BeanbagCoffee/Beanbag_o1njjx"
+                width="50"
+                height="50"
+                src="BeanbagCoffee/Beanbag_o1njjx"
+              />
+            </Link>
           </div>
           <div className={styles.links}>
             <Link href="/menu">
