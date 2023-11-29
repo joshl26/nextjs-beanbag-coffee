@@ -19,6 +19,7 @@ const LandingCard = ({ card }: CardType) => {
 
   return (
     <div className={styles.flex_container}>
+      <div className={styles.spacer} />
       <div className={styles.left_column}>
         <div
           className={clsx({
@@ -28,11 +29,11 @@ const LandingCard = ({ card }: CardType) => {
               card.className === "landing_card_three",
           })}
         >
-          <div className={styles.spacer_large}></div>
+          <div className={styles.spacer_large} />
           <h2 className={styles.card_title}>{card.title}</h2>
-          <div className={styles.spacer}></div>
+          <div className={styles.spacer} />
           <h4 className={styles.card_text_body}>{card.textBody}</h4>
-          <div className={styles.spacer}></div>
+          <div className={styles.spacer} />
           <RoundButton
             href=""
             buttonText={card.buttonText}
@@ -55,6 +56,7 @@ const LandingCard = ({ card }: CardType) => {
           />
         </div>
       </div>
+      <div className={styles.spacer} />
     </div>
   );
 };

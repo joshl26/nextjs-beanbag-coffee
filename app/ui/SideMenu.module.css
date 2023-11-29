@@ -1,0 +1,22 @@
+.side_menu_container {
+  z-index: 10;
+  position: absolute;
+  top: 90px;
+  right: 0px;
+  height: 100%;
+  width: 100vw;
+  background: rgba(125, 125, 125, 0.3);
+  overflow-y: hidden;
+}
+
+.side_menu_inner_container {
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 80vw;
+  background: white;
+}
+
+

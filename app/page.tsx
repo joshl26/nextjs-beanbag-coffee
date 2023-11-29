@@ -8,13 +8,8 @@ export default function Home() {
     <main className={styles.main}>
       <section className={styles.section_landing_card}>
         {CardData.map((card: CardDataType) => (
-          <>
-            <div className={styles.spacer}></div>
-            <LandingCard key={card.id} card={card} />
-            <div className={styles.spacer}></div>
-          </>
+          <LandingCard key={card.id} card={card} />
         ))}
-
         <p className={styles.landing_info}>
           *Valid 11/17 - 11/30, enjoy 25% off your next Beanbag order of $20 or
           more, excluding taxes and fees, on DoorDash. Fees subject to change.

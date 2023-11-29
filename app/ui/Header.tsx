@@ -1,14 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.css";
 import RoundButton from "./RoundButton";
 import { CldImage } from "next-cloudinary";
+import SideMenu from "./SideMenu";
 
 const Header = () => {
+  const [menuEnabled, setMenuEnabled] = useState(false);
+
+  const handleMenuClick = () => {
+    console.log("menu click");
+    setMenuEnabled(!menuEnabled);
+  };
+
   return (
     <header className={styles.header}>
+      <div className={styles.side_menu}> {menuEnabled ? <SideMenu /> : ""}</div>
       <div className={styles.spacer} />
       <div className={styles.navbar}>
         <div className={styles.link_container}>
@@ -45,7 +54,7 @@ const Header = () => {
           />
         </div>
         <div className={styles.menu}>
-          <Link href="">
+          <Link onClick={() => handleMenuClick()} href="">
             <CldImage
               className={styles.hamburger_menu}
               alt="BeanbagCoffee/hamburger_ztvs3l"
