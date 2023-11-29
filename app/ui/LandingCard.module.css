@@ -23,12 +23,14 @@
   background: rgb(var(--landing-card-two-rgb));
   height: 100%;
   width: 100%;
+  color: rgb(var(--landing-background-rgb));
 }
 
 .landing_card_three {
   background: rgb(var(--landing-card-three-rgb));
   height: 100%;
   width: 100%;
+  color: rgb(var(--landing-background-rgb));
 }
 .card_row {
   display: flex;
@@ -53,19 +55,18 @@
 
 .button_card_one:hover {
   background: rgb(var(--landing-background-rgb));
-  border: 1px solid black;
+  border: 1px solid rgb(var(--landing-background-rgb));
   color: black;
 }
 
 .button_card_two {
   background: rgb(var(--landing-card-two-rgb));
-  border: 1px solid black;
-  color: black;
+  border: 1px solid rgb(var(--landing-background-rgb));
 }
 
 .button_card_two:hover {
   background: rgb(var(--landing-background-rgb));
-  border: 1px solid black;
+  border: 1px solid rgb(var(--landing-background-rgb));
   color: black;
 }
 
@@ -76,7 +77,7 @@
 
 .button_card_three:hover {
   background: rgb(var(--landing-background-rgb));
-  border: 1px solid black;
+  border: 1px solid rgb(var(--landing-background-rgb));
   color: black;
 }
 
