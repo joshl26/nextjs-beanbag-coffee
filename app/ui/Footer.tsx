@@ -1,10 +1,9 @@
-import Image from "next/image";
+"use client";
+
 import React from "react";
 import styles from "./Footer.module.css";
-import LinkedIn from "/public/linkedIn.svg";
-import Facebook from "/public/facebook.svg";
-import Instagram from "/public/instagram.svg";
 import Link from "next/link";
+import { CldImage } from "next-cloudinary";
 
 const Footer = () => {
   return (
@@ -12,9 +11,28 @@ const Footer = () => {
       <div className={styles.footer_container}>
         <div className={styles.spacer}></div>
         <div className={styles.social_icons}>
-          <Image alt="" src={Instagram} />
+          <CldImage
+            alt="BeanbagCoffee/instagram_vjpgd3"
+            width="50"
+            height="50"
+            src="BeanbagCoffee/instagram_vjpgd3"
+          />
+          <CldImage
+            alt="BeanbagCoffee/linkedIn_g57wsg"
+            width="50"
+            height="50"
+            src="BeanbagCoffee/linkedIn_g57wsg"
+          />
+          <CldImage
+            alt="BeanbagCoffee/facebook_czenso"
+            width="50"
+            height="50"
+            src="BeanbagCoffee/facebook_czenso"
+          />
+
+          {/* <Image alt="" src={Instagram} />
           <Image alt="" src={Facebook} />
-          <Image alt="" src={LinkedIn} />
+          <Image alt="" src={LinkedIn} /> */}
         </div>
         <div className={styles.spacer}></div>
         <div className={styles.footer_row}>
