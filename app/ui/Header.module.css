@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 90px;
-  border-bottom: rgb(200, 200, 200) 2px solid;
+  border-bottom: var(--border-color);
   display: flex;
 }
 

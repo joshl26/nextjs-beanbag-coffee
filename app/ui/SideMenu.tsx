@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import RoundButton from "./RoundButton";
 import styles from "./SideMenu.module.css";
 
 const SideMenu = () => {
@@ -6,9 +8,29 @@ const SideMenu = () => {
     <div className={styles.side_menu_container}>
       <div className={styles.side_menu_inner_container}>
         <div>
-          <h2>Link 1</h2>
-          <h2>Link 2</h2>
-          <h2>Link 3</h2>
+          <div className={styles.link_container}>
+            <h2 className={styles.link}>
+              <Link href="/menu">Menu</Link>
+            </h2>
+            <h2 className={styles.link}>
+              <Link href="/rewards">Rewards</Link>
+            </h2>
+            <h2 className={styles.link}>
+              <Link href="/gift-cards">Gift Cards</Link>
+            </h2>
+          </div>
+          <div className={styles.divider}></div>
+          <div className={styles.spacer}></div>
+          <RoundButton
+            href="/signin"
+            className={styles.button_signin}
+            buttonText="Sign In"
+          />
+          <RoundButton
+            href="/join"
+            className={styles.button_joinnow}
+            buttonText="Join Now"
+          />
         </div>
       </div>
     </div>

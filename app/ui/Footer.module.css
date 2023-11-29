@@ -4,8 +4,7 @@
   }
 
   .footer_container {
-    border-top: rgb(200, 200, 200) 2px solid;
-
+    border-top: var(--border-color);
     max-width: var(--max-width);
     margin: 0 auto;
   }
