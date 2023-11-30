@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import styles from "@/app/page.module.css";
 import LandingCard from "./ui/LandingCard";
 import { CardDataType } from "./types/types";
 import { CardData } from "./data/cardData";

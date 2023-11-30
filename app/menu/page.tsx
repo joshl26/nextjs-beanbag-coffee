@@ -13,20 +13,18 @@ const Menu = () => {
     <main className="main">
       <section className={styles.menu_section}>
         <div className={styles.menu_links_container}>
-          <div className={styles.spacer_small}></div>
-
+          <div className={styles.spacer_small} />
           <h3>Drinks</h3>
-          <div className={styles.spacer_small}></div>
+          <div className={styles.spacer_small} />
           {DrinkData.map((menuCard: MenuCardDataType) => (
             <Link key={menuCard.id} href={menuCard.href}>
               <h4 className={styles.menu_link}>{menuCard.title}</h4>
-              <div className={styles.spacer_small}></div>
+              <div className={styles.spacer_small} />
             </Link>
           ))}
-          <div className={styles.spacer}></div>
+          <div className={styles.spacer} />
           <h3>At Home</h3>
-          <div className={styles.spacer_small}></div>
-
+          <div className={styles.spacer_small} />
           {AtHomeData.map((menuCard: MenuCardDataType) => (
             <Link key={menuCard.id} href={menuCard.href}>
               <h4 className={styles.menu_link} key={menuCard.id}>
