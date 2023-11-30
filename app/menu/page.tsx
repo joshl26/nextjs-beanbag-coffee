@@ -17,9 +17,11 @@ const Menu = () => {
         <div className={styles.spacer} />
         <div className={styles.menu_divider} />
         <div className={styles.spacer} />
-        {DrinkData.map((menuCard: MenuCardDataType) => (
-          <MenuCard key={menuCard.id} menuCard={menuCard} />
-        ))}
+        <div className={styles.menu_card_container}>
+          {DrinkData.map((menuCard: MenuCardDataType) => (
+            <MenuCard key={menuCard.id} menuCard={menuCard} />
+          ))}
+        </div>
         <div className={styles.spacer} />
         <p className={styles.paragraph}>At Home</p>
         <div className={styles.spacer} />

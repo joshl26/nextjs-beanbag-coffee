@@ -19,3 +19,21 @@
   font-weight: 800;
   font-family: raleway;
 }
+
+@media (min-width: 801px) {
+  .menu_card_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 500;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu_card_container {
+    display: flex;
+    flex-direction: column;
+  }
+}
