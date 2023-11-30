@@ -39,11 +39,11 @@ const Footer = () => {
             <h3 className={styles.link}>Privacy Notice</h3>
           </Link>
           <h3 className={styles.link}>|</h3>
-          <Link href="/tos">
+          <Link href="/terms-of-service">
             <h3 className={styles.link}>Terms of Use</h3>
           </Link>
           <h3 className={styles.link}>|</h3>
-          <Link href="/noshare">
+          <Link href="/no-share">
             <h3 className={styles.link}>
               Do Not Share My Personal Information
             </h3>
