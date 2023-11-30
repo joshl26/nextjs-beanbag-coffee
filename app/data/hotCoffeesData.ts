@@ -7,7 +7,7 @@ export const brewedCoffeeData = [
   },
   {
     id: 2,
-    title: "Featured Medium Roast",
+    title: "Featured Med. Roast",
     imgUrl: "BeanbagCoffee/coffee-smiley_wqpycu",
     href: "/menu/product/1002",
   },
