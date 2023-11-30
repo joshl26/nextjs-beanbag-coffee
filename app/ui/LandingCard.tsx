@@ -49,6 +49,7 @@ const LandingCard = ({ card }: CardType) => {
       <div className={styles.right_column}>
         <div>
           <CldImage
+            crop="thumb"
             alt={imageTernary}
             width="600"
             height="600"
