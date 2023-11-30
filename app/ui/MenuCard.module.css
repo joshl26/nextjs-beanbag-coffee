@@ -1,0 +1,18 @@
+.image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  
+}
+
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.spacer {
+  height: 25px;
+}

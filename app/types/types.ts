@@ -10,3 +10,14 @@ export type CardDataType = {
 export type CardType = {
   card: CardDataType;
 };
+
+export type MenuCardDataType = {
+  id: number;
+  title: string;
+  imgUrl: string;
+  href: string;
+};
+
+export type MenuCardType = {
+  menuCard: MenuCardDataType;
+};

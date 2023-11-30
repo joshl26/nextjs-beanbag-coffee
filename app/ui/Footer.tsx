@@ -12,27 +12,26 @@ const Footer = () => {
         <div className={styles.spacer}></div>
         <div className={styles.social_icons}>
           <CldImage
+            className={styles.social_image}
             alt="BeanbagCoffee/instagram_vjpgd3"
             width="50"
             height="50"
             src="BeanbagCoffee/instagram_vjpgd3"
           />
           <CldImage
+            className={styles.social_image}
             alt="BeanbagCoffee/linkedIn_g57wsg"
             width="50"
             height="50"
             src="BeanbagCoffee/linkedIn_g57wsg"
           />
           <CldImage
+            className={styles.social_image}
             alt="BeanbagCoffee/facebook_czenso"
             width="50"
             height="50"
             src="BeanbagCoffee/facebook_czenso"
           />
-
-          {/* <Image alt="" src={Instagram} />
-          <Image alt="" src={Facebook} />
-          <Image alt="" src={LinkedIn} /> */}
         </div>
         <div className={styles.spacer}></div>
         <div className={styles.footer_row}>
