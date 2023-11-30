@@ -14,7 +14,7 @@ const MenuCard = ({ menuCard }: MenuCardType) => {
             className={styles.image}
             alt={menuCard.imgUrl}
             width="100"
-            height="80"
+            height="100"
             src={menuCard.imgUrl}
           />
           <h3 className={styles.title}>{menuCard.title}</h3>
