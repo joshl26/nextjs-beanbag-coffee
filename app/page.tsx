@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.section_landing_card}>
+        <div className={styles.spacer_small} />
         {CardData.map((card: CardDataType) => (
           <LandingCard key={card.id} card={card} />
         ))}
@@ -21,7 +22,7 @@ export default function Home() {
           in stores or as marked. See the DoorDash app for availability and
           restrictions.
         </p>
-        <div className={styles.spacer}></div>
+        <div className={styles.spacer} />
       </section>
     </main>
   );

@@ -28,22 +28,35 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .section_landing_card {
+    width: 100%;
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+  }
+
+  .spacer_small {
+    height: 35px;
+  }
+
+  .spacer {
+    height: 50px;
+  }
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-}
+@media (min-width: 701px) {
+  .section_landing_card {
+    width: 100%;
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
 
-.section_landing_card {
-  width: 100%;
-  display: flex;
-  align-items: top;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.spacer {
-  height: 50px;
+  .spacer {
+    height: 50px;
+  }
 }
 
 .landing_info {
